@@ -14,7 +14,7 @@ public class BStackTests extends BaseTest {
     @Test
     @DisplayName("Проверка кнопки 'Text'")
     @Tag("IOS")
-    public void searchArticleAboutMammothWithErrorTest() {
+    public void checkTextButtonTest() {
         BStackMainScreen mainScreen = new BStackMainScreen();
 
         mainScreen.checkMainScreen()
