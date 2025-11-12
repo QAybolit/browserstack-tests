@@ -5,7 +5,7 @@ import io.qameta.allure.Story;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import screens.wiki.WikiMainScreen;
+import screens.WikiMainScreen;
 
 @Owner("Dina")
 @Story("Android тесты для приложения Wikipedia")

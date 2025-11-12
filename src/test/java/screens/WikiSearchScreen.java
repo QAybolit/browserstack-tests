@@ -1,4 +1,4 @@
-package screens.wiki;
+package screens;
 
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
