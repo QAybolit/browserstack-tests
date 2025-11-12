@@ -8,6 +8,7 @@ def appiumVersion = "10.0.0",
     junitVersion = "5.11.3",
     aspectjVersion = "1.9.22.1",
     selenideVersion = "7.5.1",
+    restAssuredVersion = "5.5.6",
     ownerVersion = "1.0.12"
 
 repositories {
@@ -36,6 +37,7 @@ dependencies {
             "org.junit.jupiter:junit-jupiter:$junitVersion",
             "org.aspectj:aspectjweaver:$aspectjVersion",
             "com.codeborne:selenide:$selenideVersion",
+            "io.rest-assured:rest-assured:$restAssuredVersion",
             "org.aeonbits.owner:owner:$ownerVersion"
     )
 }
@@ -47,5 +49,19 @@ tasks.withType(Test).configureEach {
     testLogging {
         events "passed", "skipped", "failed", "standardOut", "standardError"
         exceptionFormat "full"
+    }
+}
+
+tasks.register("android", Test) {
+
+    useJUnitPlatform {
+        includeTags("Android")
+    }
+}
+
+tasks.register("ios", Test) {
+
+    useJUnitPlatform {
+        includeTags("IOS")
     }
 }
