@@ -21,7 +21,7 @@ public class BStackTextScreen {
         return this;
     }
 
-    @Step("Нажать на кнопку возвращения на предидущую страницу")
+    @Step("Нажать на кнопку возвращения на предыдущую страницу")
     public BStackMainScreen pressBackButton() {
         this.backButton.shouldBe(visible).click();
         return new BStackMainScreen();
