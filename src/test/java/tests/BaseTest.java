@@ -19,8 +19,8 @@ public class BaseTest {
     @BeforeAll
     public static void setUp() {
         Configuration.browser = BrowserStackDriver.class.getName();
-        Configuration.browserSize=null;
-        Configuration.timeout=projectConfig.timeout();
+        Configuration.browserSize = null;
+        Configuration.timeout = projectConfig.timeout();
     }
 
     @BeforeEach

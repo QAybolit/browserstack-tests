@@ -49,7 +49,7 @@ public class BrowserStackDriver implements WebDriverProvider {
 
     private URL getServerUrl() {
         try {
-            return new URL(String.format(projectConfig.browserstackUrl(), projectConfig.browserstackUser() , projectConfig.browserstackKey()));
+            return new URL(String.format(projectConfig.browserstackUrl(), projectConfig.browserstackUser(), projectConfig.browserstackKey()));
         } catch (MalformedURLException e) {
             throw new RuntimeException(e);
         }
